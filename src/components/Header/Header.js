@@ -13,7 +13,7 @@ const itemVariants = {
 
 const Header = (props) => {
 
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
 
     const handleMenuClick = () => {
         setShowMenu(!showMenu);
@@ -28,27 +28,28 @@ const Header = (props) => {
                     <i className={`menu-icon fa fa-times ${showMenu ? 'show-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
                     <i className={`menu-icon fa fa-bars ${!showMenu ? 'show-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
                     <motion.nav
-                        // variants={{
-                        //     open: {
-                        //       clipPath: "circle(0% 0% 0% 0% round 0px)",
-                        //       transition: {
-                        //         type: "spring",
-                        //         bounce: 0,
-                        //         duration: 0.7,
-                        //         delayChildren: 0.3,
-                        //         staggerChildren: 0.05
-                        //       }
-                        //     },
-                        //     closed: {
-                        //       clipPath: "circle(10% 50% 90% 50% round 10px)",
-                        //       transition: {
-                        //         type: "spring",
-                        //         bounce: 0,
-                        //         duration: 0.3
-                        //       }
-                        //     }
-                        //   }}
-                        variants={itemVariants}
+                        variants={{
+                            open: {
+                              clipPath: "inset(0% 0% 0% 0% round 5px)",
+                              transition: {
+                                type: "spring",
+                                bounce: 0,
+                                duration: 0.7,
+                                delayChildren: 0.3,
+                                staggerChildren: 0.05
+                              }
+                            },
+                            closed: {
+                              clipPath: "inset(10% 50% 90% 50% round 10px)",
+                              transition: {
+                                type: "spring",
+                                bounce: 0,
+                                duration: 0.3
+                              }
+                            }
+                          }}
+                        // variants={itemVariants}
+                        initial={false}
                         animate={showMenu ? "open" : "closed"} 
                         className={`nav`}>
                         <motion.ul
