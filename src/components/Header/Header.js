@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import logo from '../../images/logo.png';
 import './Header.scss';
 
 const itemVariants = {
@@ -14,19 +15,28 @@ const itemVariants = {
 const Header = (props) => {
 
     const [showMenu, setShowMenu] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
     const handleMenuClick = () => {
         setShowMenu(!showMenu);
+    }
+
+    const handleDarkModeClick = () => {
+        setDarkMode(!darkMode);
     }
 
     return (
         <div className="header">
             <div className="container">
                 {/* change brand to AS insde a div like a logo */}
-                <a className="brand">Ashish Singh</a> 
+                <a className="brand">
+                  <img src={logo}/>
+                </a> 
                 <div className="menu">
-                    <i className={`menu-icon fa fa-times ${showMenu ? 'show-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
-                    <i className={`menu-icon fa fa-bars ${!showMenu ? 'show-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
+                    <i className={`menu-icon fa fa-moon-o ${darkMode ? 'show-inline-element': 'hide-element'}`} onClick={handleDarkModeClick}/>
+                    <i className={`menu-icon fa fa-sun-o ${!darkMode ? 'show-inline-element' : 'hide-element'}`} onClick={handleDarkModeClick}/>
+                    <i className={`menu-icon fa fa-times ${showMenu ? 'show-inline-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
+                    <i className={`menu-icon fa fa-bars ${!showMenu ? 'show-inline-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
                     <motion.nav
                         variants={{
                             open: {
