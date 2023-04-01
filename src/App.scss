@@ -1,0 +1,78 @@
+@import './common/colors.scss';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.show-element {
+  display: block;
+}
+
+.show-inline-element {
+  display: inline-block;
+}
+
+.hide-element {
+  display: none;
+}
+
+.small-heading {
+  font-size: 20px;
+}
+
+.big-heading {
+  font-size: 50px;
+}
+
+.highlighted-heading {
+  color: $secondary-text-color;
+  font-weight: normal;
+  margin-bottom: 10px;
+
+  &::after{
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 100px;
+    height: 1px;
+    background-color: $secondary-text-color;
+    vertical-align: middle;
+  }
+}
+
+.bullet-point {
+  position: relative;
+  &::before {
+    content: "▹";
+    position: absolute;
+    left: -15px;
+    color: $secondary-text-color;
+    margin-left: -5px;
+  }
+}
+
+.highlight {
+  background-color: $highlight-color;
+  padding: 0px 5px;
+}
+
