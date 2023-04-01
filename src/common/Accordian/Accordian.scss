@@ -1,0 +1,51 @@
+@import '../../common/colors.scss';
+
+.accordian {    
+    &-item {
+
+    }
+
+    &-name {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $background-color-primay;
+        padding: 10px;
+        border-bottom: 1px solid $border-color;
+
+        img {
+            max-width: 30px;
+            width: 100%;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .fa-angle-down {
+            font-size: 18px;
+        }
+    }
+
+    &-content {
+        background-color: $white-color;
+        padding: 15px 25px;
+
+        .title {
+            font-weight: 500;
+            display: block;
+            font-size: 18px;
+        }
+
+        .duration {
+            font-weight: 500;
+            color: $sub-text-color;
+            font-size: 13px;
+        }
+
+        .bullet-point{
+            &::before{
+                color: $primary-color;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import SocialMedia from './components/SocialMedia/SocialMedia';
-import { about, technology } from './common/data';
+import { about, experience } from './common/data';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       {/* <SocialMedia/> */}
       <About data={{
         about: about,
+        experience: experience
       }}/>
       <Footer/>
     </div>
