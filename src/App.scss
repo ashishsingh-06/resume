@@ -47,7 +47,7 @@ ul {
 .highlighted-heading {
   color: $secondary-text-color;
   font-weight: normal;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   &::after{
     content: '';
@@ -76,3 +76,6 @@ ul {
   padding: 0px 5px;
 }
 
+.rotate-180 {
+  transform: rotate(180deg) !important;
+}

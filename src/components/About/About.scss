@@ -46,6 +46,7 @@
         // padding: 10px;
         max-width: 730px;
         width: 100%;
+        margin-top: 20px;
         // // height: 200px;
         // background-color: $background-color-primay;
         // border-radius: 10px;
@@ -58,10 +59,11 @@
     .technology {
         max-width: 730px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 40px;
 
         &-list {
-            padding: 10px 15px;
+            padding: 0px 15px;
+            color: $white-color;
         }
 
         &-container {

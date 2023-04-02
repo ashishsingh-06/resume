@@ -1,5 +1,3 @@
-import Experience from '../Experience/Experience';
-import { experience } from '../../common/data';
 import './About.scss';
 import Accordian from '../../common/Accordian/Accordian';
 
@@ -16,9 +14,9 @@ const About = (props) => {
                     <h1>{headingText}</h1>
                     <p>{paragraphOne}</p>
                     <p>{paragraphTwo}</p>
-                    <h3 className='about-body-heading highlighted-heading'><span className='highlight'>Where I’ve Worked.</span></h3>
                 </div>
                 <div className='about-body experience'>
+                    <h3 className='about-body-heading highlighted-heading'><span className='highlight'>Where I’ve Worked.</span></h3>
                     {experience.map((item, index)=>{
                        return <Accordian key={index} data={item}/>
                     })}
