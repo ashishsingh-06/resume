@@ -13,6 +13,12 @@
 
 a {
   text-decoration: none;
+  color: $black-color;
+
+  &:visited{
+    text-decoration: none;
+    color: $black-color;
+  }
 }
 
 ul {
@@ -42,6 +48,10 @@ ul {
 
 .big-heading {
   font-size: 50px;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 }
 
 .highlighted-heading {
@@ -78,4 +88,20 @@ ul {
 
 .rotate-180 {
   transform: rotate(180deg) !important;
+}
+
+.button-primary {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: $white-color;
+  background-color: $primary-color;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    transform: scale(1.02);
+    // background-color: #1e8dff;
+  }
 }

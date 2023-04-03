@@ -1,12 +1,37 @@
 import informaticaLogo from '../images/informatica_logo.svg';
 import thoughts2binaryLogo from '../images/thougts2binary_logo.png';
 import fullcreativeLogo from '../images/fullcreative_logo.png';
+import recipeAppImage from '../images/recipe_app.png';
+import movieWebsiteImage from '../images/movie_website.png';
+import portFolioWebsiteImage from '../images/portfolio_website.png';
+import travelWebsiteImage from '../images/travel_website.png';
+import medicalWebsiteImage from '../images/medical_website.png';
+import cryptoWebsiteImage from '../images/crypto_website.png';
+import fashionWebsiteImage from '../images/fashion_website.png';
 
 export const about = {
     headingText: "Hello! Nice to meet you.",
     paragraphOne: "I'm a software developer, and my expertise lies in the frontend development arena. I've been developing web-based products and apps for the last two years, using various frontend programming languages to bring them to life.",
     paragraphTwo: "I'm passionate about creating intuitive and visually appealing interfaces that users will love. Over the past two years, I've gained valuable experience in the frontend development field. I've worked on a variety of projects, collaborating with designers, developers, and product managers to create applications that meet the needs of both businesses and end-users."
 }
+
+export const socialMedia = [
+    {
+        name: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/ashish-singh-06/',
+        icon: 'fa fa-linkedin'
+    },
+    {
+        name: 'GitHub',
+        link: 'https://github.com/ashishsingh-06',
+        icon: 'fa fa-github'
+    },
+    {
+        name: 'CodePen',
+        link: 'https://codepen.io/06ashish',
+        icon: 'fa fa-codepen',
+    }
+]
 
 export const experience = [
     {
@@ -35,6 +60,7 @@ export const experience = [
 export const projects = [
     {
         title: 'Recipes App',
+        image: recipeAppImage,
         description: 'The Recipes App made with React is a user-friendly single-page application that utilizes React components and Axios library to fetch and display recipes data from a RESTful API.',
         techUsed: ['React.js','CSS'],
         link: {
@@ -44,6 +70,7 @@ export const projects = [
     },
     {
         title: 'Movie App',
+        image: movieWebsiteImage,
         description: `The Movie App is a user-friendly application that allows users to search and discover movies. It uses the powerful React library and Redux state management for efficient data flow, while SCSS enhances the app's visual appeal.`,
         techUsed: ['React.js','Redux','SCSS'],
         link: {
@@ -52,6 +79,7 @@ export const projects = [
     },
     {
         title: 'Portfolio Website V1',
+        image: portFolioWebsiteImage,
         description: 'My first portfolio website, i designed and developed in 2020, Used task runners like gulp to optimize webpage and scss for styles.',
         techUsed: ['HTML','SCSS','JavaScript'],
         link: {
@@ -61,6 +89,7 @@ export const projects = [
     },
     {
         title: 'Travel Website Landing Page',
+        image: travelWebsiteImage,
         description: `The Travel Website Landing Page, showcases various places to visit in Japan, it highlights the country's top destinations, from bustling cities to serene natural wonders, with stunning images and informative content.`,
         techUsed: ['HTML','CSS','JavaScript'],
         link: {
@@ -70,6 +99,7 @@ export const projects = [
     },
     {
         title: 'Medical Website Landing Page',
+        image: medicalWebsiteImage,
         description: 'The Medical Website Landing Page provides information about medical services and resources, using a simple yet effective layout that features a hero section with a prominent banner.',
         techUsed: ['HTML','CSS','JavaScript'],
         link: {
@@ -79,6 +109,7 @@ export const projects = [
     },
     {
         title: 'Crypto Website Landing Page',
+        image: cryptoWebsiteImage,
         description: 'The Crypto Website Landing Page is a static webpage. It features a header section with navigation, hero section with banner and call-to-action button, and several content sections highlighting benefits and features.',
         techUsed: ['HTML','SCSS','JavaScript'],
         link: {
@@ -88,6 +119,7 @@ export const projects = [
     },
     {
         title: 'Fashion Website Landing Page',
+        image: fashionWebsiteImage,
         description: 'The Fashion Website Landing Page made with Bootstrap is a modern and responsive webpage designed to showcase fashion-related content. It uses the Bootstrap framework to create a visually appealing and easy-to-navigate layout.',
         techUsed: ['HTML','CSS','BootStrap'],
         link: {

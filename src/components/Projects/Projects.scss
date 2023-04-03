@@ -10,47 +10,95 @@
         margin: 0 auto;
     }
 
-    .highlighted-heading {
+    &-header {
+        .highlighted-heading {
 
-        &::after{
-            background-color: $black-color;
+            &::after{
+                background-color: $black-color;
+            }
         }
     }
+
+
 
     &-content {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 20px;
 
+        @media (max-width: 720px) {
+            grid-template-columns: 1fr;
+        }
+
         & > div {
             cursor: pointer;
             padding: 10px;
             border-radius: 5px;
             background-color: $white-color;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         }
 
         .card {
 
             display: flex;
             flex-direction: column;
+            // opacity: 0;
+            // // transform: translateY(20px);
+            // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, scale 0.3s ease-out;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                transform: scale(1.01);
+            }
 
             &-header {
                 display: flex;
                 justify-content: space-between;
 
                 .links {
-                    .fa-github {
+                    .fa {
+                        font-size: 20px;
                         margin-right: 10px;
+                        
+                        &:hover {
+                            color: $primary-color;
+                        }
+
                     }
                 }
             }
 
             &-body {
                 flex-grow: 1;
+
+                &-image {
+                    width: 100%;
+                    margin: 5px 0px;
+                }
+
+                &-title {
+                    margin: 10px 0px;
+                }
+
+                p {
+                    color: $sub-text-color;
+                }
             }
 
             &-footer {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-links {
+                    
+                    .fa {
+                        font-size: 18px;
+                        margin-left: 12px;
+                    }
+                }
 
                 .techUsed-items {
                     font-size: 12px;
@@ -60,4 +108,16 @@
             }
         }
     }
+
+    &-footer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
 }
+
+
+// .show {
+//     opacity: 1 !important;
+//     transform: translateY(0) !important;
+// }

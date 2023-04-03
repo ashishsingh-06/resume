@@ -7,7 +7,7 @@ const About = (props) => {
     const experience = props.data.experience;
 
     return (
-        <div className='about'>
+        <section id='about' className='about'>
             <div className='container'>
                 <div className='about-header'>
                     <h1>{headingText}</h1>
@@ -38,21 +38,21 @@ const About = (props) => {
                     </h3>
                     <div className='technology-container'>
                         <ul className='technology-list'>
-                            <li className='bullet-point'>HTML5</li>
+                            <li className='bullet-point'>JavaScript</li>
                             <li className='bullet-point'>CSS3</li>
-                            <li className='bullet-point'>Javascript</li>
+                            <li className='bullet-point'>HTML5</li>
                             <li className='bullet-point'>SCSS</li>
                         </ul>
                         <ul className='technology-list'>
-                            <li className='bullet-point'>React</li>
-                            <li className='bullet-point'>Bootstrap</li>
-                            <li className='bullet-point'>Typescript</li>
+                            <li className='bullet-point'>React.Js</li>
+                            <li className='bullet-point'>BootStrap</li>
+                            <li className='bullet-point'>TypeScript</li>
                             <li className='bullet-point'>JQuery</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

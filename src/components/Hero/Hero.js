@@ -1,12 +1,13 @@
 import React from "react";
 import './Hero.scss';
 import heroImage from '../../images/hero_image.svg';
-import heroAvatar from '../../images/hero_avatar_two.svg';
+import heroAvatar from '../../images/hero_avatar.svg';
+import SocialMedia from "../SocialMedia/SocialMedia";
 
-const Hero = () => {
+const Hero = (props) => {
 
     return (
-        <section className="hero">
+        <section id="home" className="hero">
             <div className="container">
                 <div className="hero-body">
                     <div className="text">
@@ -18,6 +19,7 @@ const Hero = () => {
                         <img src={heroAvatar}/>
                     </div>
                 </div>
+                <SocialMedia data={props.data}/>
                 <div className="hero-footer">
                     <img src={heroImage}/>
                 </div>

@@ -24,17 +24,20 @@ const Header = (props) => {
     const handleDarkModeClick = () => {
         setDarkMode(!darkMode);
     }
+    
+    const handleLogoClick = () => {
+      window.location.reload();
+    }
 
     return (
         <div className="header">
             <div className="container">
-                {/* change brand to AS insde a div like a logo */}
                 <a className="brand">
-                  <img src={logo}/>
+                  <img src={logo} alt="logo" onClick={handleLogoClick}/>
                 </a> 
                 <div className="menu">
-                    <i className={`menu-icon fa fa-moon-o ${darkMode ? 'show-inline-element': 'hide-element'}`} onClick={handleDarkModeClick}/>
-                    <i className={`menu-icon fa fa-sun-o ${!darkMode ? 'show-inline-element' : 'hide-element'}`} onClick={handleDarkModeClick}/>
+                    {/* <i className={`menu-icon fa fa-moon-o ${darkMode ? 'show-inline-element': 'hide-element'}`} onClick={handleDarkModeClick}/>
+                    <i className={`menu-icon fa fa-sun-o ${!darkMode ? 'show-inline-element' : 'hide-element'}`} onClick={handleDarkModeClick}/> */}
                     <i className={`menu-icon fa fa-times ${showMenu ? 'show-inline-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
                     <i className={`menu-icon fa fa-bars ${!showMenu ? 'show-inline-element' : 'hide-element'}`} onClick={handleMenuClick}></i>
                     <motion.nav
@@ -64,10 +67,10 @@ const Header = (props) => {
                         className={`nav`}>
                         <motion.ul
                             className="nav-list">
-                            <motion.li variants={itemVariants} className="nav-list-item"><a>Home</a></motion.li>
-                            <motion.li variants={itemVariants} className="nav-list-item"><a>Portfolio</a></motion.li>
-                            <motion.li variants={itemVariants} className="nav-list-item"><a>Experience</a></motion.li>
-                            <motion.li variants={itemVariants} className="nav-list-item"><a>About</a></motion.li>
+                            <motion.li variants={itemVariants} className="nav-list-item"><a href="#home">Home</a></motion.li>
+                            <motion.li variants={itemVariants} className="nav-list-item"><a href="#about">About</a></motion.li>
+                            <motion.li variants={itemVariants} className="nav-list-item"><a href="#projects">Projects</a></motion.li>
+                            <motion.li variants={itemVariants} className="nav-list-item"><a href="#contact">Contact</a></motion.li>
                         </motion.ul>
                     </motion.nav>
                 </div>

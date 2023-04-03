@@ -1,20 +1,25 @@
 import './SocialMedia.scss';
 
-const SocialMedia = () => {
+const SocialMedia = (props) => {
+    console.log(props);
+    const data = props.data;
 
     return (
         <div className='socialMedia'>
-            <div className='container'>
-                <ul className='list'>
-                    <li>
-                        <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-codepen" aria-hidden="true"></i></a>
-                    </li>
+            <div className='socialMedia-wrapper'>
+                <ul className='socialMedia-list'>
+                    {
+                       data.map((item, index) => {
+                            return <li key={index} className={`socialMedia-list-item item-${item.name}`}>
+                                <span className={`tooltip ${item.name}`}>
+                                    {item.name}
+                                </span>
+                                <a href={item.link} target='_blank'>
+                                    <i className={item.icon} />
+                                </a>
+                            </li>
+                       })
+                    }
                 </ul>
             </div>
         </div>
