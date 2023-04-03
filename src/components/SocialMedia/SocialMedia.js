@@ -1,7 +1,6 @@
 import './SocialMedia.scss';
 
 const SocialMedia = (props) => {
-    console.log(props);
     const data = props.data;
 
     return (
