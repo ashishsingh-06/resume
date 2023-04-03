@@ -31,3 +31,69 @@ export const experience = [
         roleDescription: ['Worked on various web development tasks and gained hands-on experience with different programming languages, and tools.','Built responsive web-pages & email templates using HTML, CSS, Javascirpt, SASS.', 'Also worked with task runners to optimize performance of webpages.']
     }
 ]
+
+export const projects = [
+    {
+        title: 'Recipes App',
+        description: '',
+        techUsed: ['React.js','CSS'],
+        link: {
+            live: 'https://tasty-recipe-app.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/recipes-app',
+        }
+    },
+    {
+        title: 'Movie App',
+        description: '',
+        techUsed: ['React.js','Redux','SCSS'],
+        link: {
+            live: 'https://tasty-recipe-app.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/recipes-app',
+        }
+    },
+    {
+        title: 'Portfolio Website V1',
+        description: '',
+        techUsed: ['HTML','CSS','JavaScript'],
+        link: {
+            live: 'https://ashish-singh.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/resume-website',
+        }
+    },
+    {
+        title: 'Travel Website Landing Page',
+        description: '',
+        techUsed: ['HTML','CSS','JavaScript'],
+        link: {
+            live: 'https://travel-website-template.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/travel-website',
+        }
+    },
+    {
+        title: 'Medical Website Landing Page',
+        description: '',
+        techUsed: ['HTML','CSS','JavaScript'],
+        link: {
+            live: 'https://hospital-web-template.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/Medical-website',
+        }
+    },
+    {
+        title: 'Crypto Website Landing Page',
+        description: '',
+        techUsed: ['HTML','SCSS','JavaScript'],
+        link: {
+            live: 'https://crypto-website-template.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/crypto-website-template',
+        }
+    },
+    {
+        title: 'Fashion Website Landing Page',
+        description: '',
+        techUsed: ['HTML','CSS','BootStrap'],
+        link: {
+            live: 'https://fashion-website-template.netlify.app/',
+            github: 'https://github.com/ashishsingh-06/fashion-template',
+        }
+    }
+]

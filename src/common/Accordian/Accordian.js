@@ -1,11 +1,17 @@
 import './Accordian.scss';
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {motion} from 'framer-motion';
 
 const Accordian = (props) => {   
 
-    const {name, logo, title, duration, roleDescription} = props.data;
+    const {name, logo} = props.data;
     const [isActive, setIsActive] = useState(false);
+    const [height, setHeight] = useState(0);
+    const contentRef = useRef(null);
+
+    useEffect(()=>{
+        setHeight(contentRef.current.scrollHeight);
+    },[]);
 
     return ( 
         <div className='accordian'>
@@ -17,40 +23,14 @@ const Accordian = (props) => {
                     </span>
                     <span><i className={`fa fa-angle-down ${isActive ? 'rotate-180' : ''}`} aria-hidden="true"/></span>
                 </div>
-                <motion.div 
-                    variants={{
-                        open: {
-                            clipPath: "inset(0% 0% 0% 0% round 0px)",
-                            transition: {
-                            type: "spring",
-                            bounce: 0,
-                            duration: 0.7,
-                            delayChildren: 0.3,
-                            staggerChildren: 0.05
-                            }
-                        },
-                        closed: {
-                            clipPath: "inset(10% 50% 90% 50% round 0px)",
-                            transition: {
-                            type: "spring",
-                            bounce: 0,
-                            duration: 0.3
-                            }
-                        }
-                        }}
-                    initial={false}
-                    // animate={isActive ? 'open' : 'closed'}
-                    className={`accordian-content ${isActive ? 'show-element' : 'hide-element'}`}>
-                    <span className='title'>{title}</span>
-                    <span className='duration'>{duration}</span>
-                    <ul>
-                        {
-                            roleDescription.map((item,index) => {
-                                return <li key={index}><span className='bullet-point'>{item}</span></li>
-                            })
-                        }
-                    </ul>
-                </motion.div>
+                <div 
+                    ref={contentRef}
+                    style={{ maxHeight: isActive ? `${height}px` : 0, opacity: isActive ? 1 : 0}}
+                    className={`accordian-content`}>
+                    <div className='accordian-content-inner'>
+                        {props.children}
+                    </div>
+                </div>
             </div>
         </div>
     )

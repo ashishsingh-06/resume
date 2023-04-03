@@ -5,7 +5,6 @@ const About = (props) => {
 
     const {headingText, paragraphOne, paragraphTwo} = props.data.about;
     const experience = props.data.experience;
-    console.log(experience);
 
     return (
         <div className='about'>
@@ -18,7 +17,19 @@ const About = (props) => {
                 <div className='about-body experience'>
                     <h3 className='about-body-heading highlighted-heading'><span className='highlight'>Where I’ve Worked.</span></h3>
                     {experience.map((item, index)=>{
-                       return <Accordian key={index} data={item}/>
+                       return (
+                            <Accordian key={index} data={item}>
+                                <span className='title'>{item.title}</span>
+                                <span className='duration'>{item.duration}</span>
+                                <ul>
+                                    {
+                                        item.roleDescription.map((item,index) => {
+                                            return <li key={index}><span className='bullet-point'>{item}</span></li>
+                                        })
+                                    }
+                                </ul>
+                            </Accordian>
+                        )
                     })}
                 </div>
                 <div className='about-footer technology'>

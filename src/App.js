@@ -4,7 +4,8 @@ import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import SocialMedia from './components/SocialMedia/SocialMedia';
-import { about, experience } from './common/data';
+import { about, experience, projects } from './common/data';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <Hero/>
       {/* <SocialMedia/> */}
       <About data={{
-        about: about,
-        experience: experience
+        about, experience
       }}/>
+      <Projects data={projects}/>
       <Footer/>
     </div>
   );
