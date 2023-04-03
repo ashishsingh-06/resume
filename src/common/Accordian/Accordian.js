@@ -1,6 +1,5 @@
 import './Accordian.scss';
 import React, {useEffect, useRef, useState} from 'react';
-import {motion} from 'framer-motion';
 
 const Accordian = (props) => {   
 
@@ -11,7 +10,7 @@ const Accordian = (props) => {
 
     useEffect(()=>{
         setHeight(contentRef.current.scrollHeight);
-    },[]);
+    },[isActive]);
 
     return ( 
         <div className='accordian'>

@@ -1,7 +1,6 @@
 @import '../../common/colors.scss';
 
 .projects {
-    height: 100vh;
     background-color: $background-color-primay;
 
     &-wrapper {
@@ -20,15 +19,45 @@
 
     &-content {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-gap: 20px;
 
         & > div {
             cursor: pointer;
+            padding: 10px;
             border-radius: 5px;
-            padding: 100px; 
             background-color: $white-color;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        .card {
+
+            display: flex;
+            flex-direction: column;
+
+            &-header {
+                display: flex;
+                justify-content: space-between;
+
+                .links {
+                    .fa-github {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            &-body {
+                flex-grow: 1;
+            }
+
+            &-footer {
+
+                .techUsed-items {
+                    font-size: 12px;
+                    color: $sub-text-color;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }

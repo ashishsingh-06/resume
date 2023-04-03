@@ -35,7 +35,7 @@ export const experience = [
 export const projects = [
     {
         title: 'Recipes App',
-        description: '',
+        description: 'The Recipes App made with React is a user-friendly single-page application that utilizes React components and Axios library to fetch and display recipes data from a RESTful API.',
         techUsed: ['React.js','CSS'],
         link: {
             live: 'https://tasty-recipe-app.netlify.app/',
@@ -44,17 +44,16 @@ export const projects = [
     },
     {
         title: 'Movie App',
-        description: '',
+        description: `The Movie App is a user-friendly application that allows users to search and discover movies. It uses the powerful React library and Redux state management for efficient data flow, while SCSS enhances the app's visual appeal.`,
         techUsed: ['React.js','Redux','SCSS'],
         link: {
-            live: 'https://tasty-recipe-app.netlify.app/',
             github: 'https://github.com/ashishsingh-06/recipes-app',
         }
     },
     {
         title: 'Portfolio Website V1',
-        description: '',
-        techUsed: ['HTML','CSS','JavaScript'],
+        description: 'My first portfolio website, i designed and developed in 2020, Used task runners like gulp to optimize webpage and scss for styles.',
+        techUsed: ['HTML','SCSS','JavaScript'],
         link: {
             live: 'https://ashish-singh.netlify.app/',
             github: 'https://github.com/ashishsingh-06/resume-website',
@@ -62,7 +61,7 @@ export const projects = [
     },
     {
         title: 'Travel Website Landing Page',
-        description: '',
+        description: `The Travel Website Landing Page, showcases various places to visit in Japan, it highlights the country's top destinations, from bustling cities to serene natural wonders, with stunning images and informative content.`,
         techUsed: ['HTML','CSS','JavaScript'],
         link: {
             live: 'https://travel-website-template.netlify.app/',
@@ -71,7 +70,7 @@ export const projects = [
     },
     {
         title: 'Medical Website Landing Page',
-        description: '',
+        description: 'The Medical Website Landing Page provides information about medical services and resources, using a simple yet effective layout that features a hero section with a prominent banner.',
         techUsed: ['HTML','CSS','JavaScript'],
         link: {
             live: 'https://hospital-web-template.netlify.app/',
@@ -80,7 +79,7 @@ export const projects = [
     },
     {
         title: 'Crypto Website Landing Page',
-        description: '',
+        description: 'The Crypto Website Landing Page is a static webpage. It features a header section with navigation, hero section with banner and call-to-action button, and several content sections highlighting benefits and features.',
         techUsed: ['HTML','SCSS','JavaScript'],
         link: {
             live: 'https://crypto-website-template.netlify.app/',
@@ -89,7 +88,7 @@ export const projects = [
     },
     {
         title: 'Fashion Website Landing Page',
-        description: '',
+        description: 'The Fashion Website Landing Page made with Bootstrap is a modern and responsive webpage designed to showcase fashion-related content. It uses the Bootstrap framework to create a visually appealing and easy-to-navigate layout.',
         techUsed: ['HTML','CSS','BootStrap'],
         link: {
             live: 'https://fashion-website-template.netlify.app/',
