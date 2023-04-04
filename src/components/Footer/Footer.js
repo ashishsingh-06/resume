@@ -11,6 +11,9 @@ const Footer = (props) => {
                     <p>I'm currently looking for new opportunities. If you're interested in discussing potential job opportunities or learning more about my skills and experience, please don't hesitate to get in touch! I look forward to hearing from you.</p>
                     <p>Best Regards, <br/> Ashish Singh.</p>
                     <a className="button-primary mail-to" href="mailto:6ashishsingh@gmail.com">Say Hello</a>
+                    <div className="author">
+                        <p>Built by - Ashish Singh</p>
+                    </div>
                 </div>
             </div>
         </section>

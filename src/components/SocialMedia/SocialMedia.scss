@@ -63,6 +63,12 @@ li:hover .tooltip {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+
+    @media (max-width: 480px){
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 // .item-LinkedIn:hover,
