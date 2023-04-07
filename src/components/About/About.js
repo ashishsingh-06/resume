@@ -42,6 +42,7 @@ const About = (props) => {
                             <li className='bullet-point'>CSS3</li>
                             <li className='bullet-point'>HTML5</li>
                             <li className='bullet-point'>SCSS</li>
+                            <li className='bullet-point'>Tailwind CSS</li>
                         </ul>
                         <ul className='technology-list'>
                             <li className='bullet-point'>React.Js</li>
