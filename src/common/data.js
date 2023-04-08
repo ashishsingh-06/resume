@@ -37,6 +37,7 @@ export const experience = [
     {
         name: 'Informatica',
         logo: informaticaLogo,
+        alt: 'Informatica Logo',
         title: 'Software Engineer',
         duration: 'Aug 2022 - Mar 2023',
         roleDescription: ['Worked on developing node package in typescript for UI components.','Addressed debugging issues, diagnosing root causes, and identifying solutions.', 'Created responsive designs & developed prototypes for web based projects.', 'Developed common React Js components to enhance productivity and worked on revamp of dashboard in the project.']
@@ -44,6 +45,7 @@ export const experience = [
     {
         name: 'Thoughts2Binary Consulting & Solutions LLP',
         logo: thoughts2binaryLogo,
+        alt: 'Thoughts2binary Logo',
         title: 'Associate Software Engineer',
         duration: 'Feb 2021 - July 2022',
         roleDescription: ['Responsible for managing User Interface',' Identiﬁed and implemented dynamic web solutions in accordance with company standards and best practices.', ' Developed new features to enhance user experience and worked in transition of the product in React Js.', 'Mentored Juniors on team in expanding their skillset']
@@ -51,6 +53,7 @@ export const experience = [
     {
         name: 'Full Creative',
         logo: fullcreativeLogo,
+        alt: 'Full Creative Logo',
         title: 'Web Development Intern',
         duration: 'Jul 2020 - Sep 2020',
         roleDescription: ['Worked on various web development tasks and gained hands-on experience with different programming languages, and tools.','Built responsive web-pages & email templates using HTML, CSS, Javascirpt, SASS.', 'Also worked with task runners to optimize performance of webpages.']

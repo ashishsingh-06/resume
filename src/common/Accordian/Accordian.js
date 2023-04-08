@@ -3,7 +3,7 @@ import React, {useEffect, useRef, useState} from 'react';
 
 const Accordian = (props) => {   
 
-    const {name, logo} = props.data;
+    const {name, logo, alt} = props.data;
     const [isActive, setIsActive] = useState(false);
     const [height, setHeight] = useState(0);
     const contentRef = useRef(null);
@@ -17,7 +17,7 @@ const Accordian = (props) => {
             <div className='accordian-item'>
                 <div className='accordian-name' onClick={()=> setIsActive(!isActive)}>
                     <span>
-                    <img src={logo}/>
+                    <img src={logo} alt={alt}/>
                     {name}
                     </span>
                     <span><i className={`fa fa-angle-down ${isActive ? 'rotate-180' : ''}`} aria-hidden="true"/></span>

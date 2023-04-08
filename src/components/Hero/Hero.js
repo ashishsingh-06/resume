@@ -16,12 +16,12 @@ const Hero = (props) => {
                         <h3 className="big-heading">I build things for the web.</h3>
                     </div>
                     <div className="hero-avatar">
-                        <img src={heroAvatar}/>
+                        <img src={heroAvatar} alt="avatar icon"/>
                     </div>
                 </div>
                 <SocialMedia data={props.data}/>
                 <div className="hero-footer">
-                    <img src={heroImage}/>
+                    <img src={heroImage} alt="multiple devices"/>
                 </div>
             </div>
         </section>
